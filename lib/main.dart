@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_explication_ef/pages/card_page.dart';
 import 'package:flutter_explication_ef/pages/home_page.dart';
 
 void main() {
@@ -11,7 +12,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: HomePage(),
+      home: CardPage(),
     );
   }
 }
