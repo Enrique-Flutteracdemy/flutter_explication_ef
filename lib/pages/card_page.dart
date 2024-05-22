@@ -39,64 +39,7 @@ class CardPage extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.all(20),
-        child:
-
-            //  ListView(
-            //   // mainAxisAlignment: MainAxisAlignment.center,
-            //   // crossAxisAlignment: CrossAxisAlignment.start,
-            //   children: [
-            //     Container(
-            //       height: 200,
-            //       width: double.infinity,
-            //       color: Colors.amber,
-            //     ),
-            //     SizedBox(
-            //       height: 20,
-            //     ),
-            //     Container(
-            //       height: 200,
-            //       width: double.infinity,
-            //       color: Colors.pink,
-            //     ),
-            //     SizedBox(
-            //       height: 20,
-            //     ),
-            //     Container(
-            //       height: 200,
-            //       width: double.infinity,
-            //       color: Colors.pink,
-            //     ),
-            //   ],
-            // ),
-
-            //     ListView(
-            //   scrollDirection: Axis.horizontal,
-            //   children: [
-            //     Container(
-            //       height: double.infinity,
-            //       width: 200,
-            //       color: Colors.amber,
-            //     ),
-            //     const SizedBox(
-            //       width: 20,
-            //     ),
-            //     Container(
-            //       height: double.infinity,
-            //       width: 200,
-            //       color: Colors.pink,
-            //     ),
-            //     const SizedBox(
-            //       width: 20,
-            //     ),
-            //     Container(
-            //       height: double.infinity,
-            //       width: 200,
-            //       color: Colors.pink,
-            //     ),
-            //   ],
-            // ),
-
-            GridView(
+        child: GridView(
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
             mainAxisSpacing: 20,
@@ -104,72 +47,6 @@ class CardPage extends StatelessWidget {
             // childAspectRatio: 10,
           ),
           children: [
-            // Container(
-            //   color: Colors.amber,
-            // ),
-            // // const SizedBox(),
-            // Container(
-            //   color: Colors.pink,
-            // ),
-            // // const SizedBox(),
-            // Container(
-            //   color: Colors.pink,
-            // ),
-            // Container(
-            //   color: Colors.amber,
-            // ),
-            // // const SizedBox(),
-            // Container(
-            //   color: Colors.pink,
-            // ),
-            // // const SizedBox(),
-            // Container(
-            //   color: Colors.pink,
-            // ),
-            // Container(
-            //   color: Colors.amber,
-            // ),
-            // // const SizedBox(),
-            // Container(
-            //   color: Colors.pink,
-            // ),
-            // // const SizedBox(),
-            // Container(
-            //   color: Colors.pink,
-            // ),
-            // Container(
-            //   color: Colors.amber,
-            // ),
-            // // const SizedBox(),
-            // Container(
-            //   color: Colors.pink,
-            // ),
-            // // const SizedBox(),
-            // Container(
-            //   color: Colors.pink,
-            // ),
-            // Container(
-            //   color: Colors.amber,
-            // ),
-            // // const SizedBox(),
-            // Container(
-            //   color: Colors.pink,
-            // ),
-            // // const SizedBox(),
-            // Container(
-            //   color: Colors.pink,
-            // ),
-            // Container(
-            //   color: Colors.amber,
-            // ),
-            // // const SizedBox(),
-            // Container(
-            //   color: Colors.pink,
-            // ),
-            // // const SizedBox(),
-            // Container(
-            //   color: Colors.pink,
-            // ),
             CardWidget(),
             CardWidget(),
             CardWidget(),
