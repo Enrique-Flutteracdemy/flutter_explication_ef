@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_explication_ef/pages/search_page_sports.dart';
+import 'package:flutter_explication_ef/router/app_router.dart';
+import 'package:go_router/go_router.dart';
 
 class NavHomePage extends StatefulWidget {
   const NavHomePage({Key? key}) : super(key: key);
@@ -47,12 +49,14 @@ class _NavHomePageState extends State<NavHomePage> {
 
   void _onIntemTapped(int index) {
     if (index == 1) {
-      Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) => const SearchPageSports(),
-        ),
-      );
+      // Navigator.push(
+      //   context,
+      //   MaterialPageRoute(
+      //     builder: (context) => const SearchPageSports(),
+      //   ),
+      // );
+
+      context.goNamed(AppRoutes.searchProducts.name);
     } else {
       setState(() {
         _selectedIndex = index;
