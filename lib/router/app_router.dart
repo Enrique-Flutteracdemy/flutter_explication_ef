@@ -1,3 +1,4 @@
+import 'package:flutter_explication_ef/counter/ui/pages/counter_page.dart';
 import 'package:flutter_explication_ef/pages/nav_home_page.dart';
 import 'package:flutter_explication_ef/pages/search_page_products.dart';
 import 'package:flutter_explication_ef/pages/search_page_sports.dart';
@@ -16,7 +17,8 @@ final goRouter = GoRouter(
         path: '/',
         name: AppRoutes.startApp.name,
         builder: (context, state) {
-          return const NavHomePage();
+          // return const NavHomePage();
+          return const CounterPage();
         },
         routes: [
           GoRoute(
