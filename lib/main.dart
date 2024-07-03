@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_explication_ef/counter/counter_cubit/counter_cubit.dart';
 import 'package:flutter_explication_ef/pages/card_page.dart';
 import 'package:flutter_explication_ef/pages/home_page.dart';
 import 'package:flutter_explication_ef/pages/nav_home_page.dart';
@@ -13,9 +15,12 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-      // home: NavHomePage(),
-      routerConfig: goRouter,
+    return BlocProvider(
+      create: (context) => CounterCubit(),
+      child: MaterialApp.router(
+        // home: NavHomePage(),
+        routerConfig: goRouter,
+      ),
     );
   }
 }
